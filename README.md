@@ -4,6 +4,21 @@
 
 ![Tests](https://github.com/liquity/dev/workflows/CI/badge.svg) [![Frontend status](https://img.shields.io/uptimerobot/status/m784948796-056b56fd51c67d682c11bb24?label=Testnet&logo=nginx&logoColor=white)](https://devui.liquity.org) ![uptime](https://img.shields.io/uptimerobot/ratio/7/m784948796-056b56fd51c67d682c11bb24) [![Discord](https://img.shields.io/discord/700620821198143498?label=join%20chat&logo=discord&logoColor=white)](https://discord.gg/2up5U32) [![Docker Pulls](https://img.shields.io/docker/pulls/liquity/dev-frontend?label=dev-frontend%20pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/liquity/dev-frontend) [![codecov](https://codecov.io/gh/liquity/dev/branch/add_codecov/graph/badge.svg)](https://codecov.io/gh/liquity/dev)
 
+## WalletConnect Integration
+
+The development frontend includes enhanced WalletConnect v2 support powered by Reown AppKit, providing seamless wallet connectivity alongside ConnectKit.
+
+**Features:**
+- WalletConnect v2 with QR code modal for mobile wallet connections
+- Support for mainnet, Goerli, and Sepolia testnets
+- Multiple wallet options: MetaMask, WalletConnect, Coinbase Wallet, and more
+- Automatic wallet reconnection and session management
+- ConnectKit integration for modern wallet UX
+
+**Configuration:**
+The WalletConnect Project ID is configured in `packages/dev-frontend/src/config/index.ts` and can be overridden via environment variables. See `.env.example` for setup instructions.
+
+---
 
 Liquity is a decentralized protocol that allows Ether holders to obtain maximum liquidity against
 their collateral without paying interest. After locking up ETH as collateral in a smart contract and
